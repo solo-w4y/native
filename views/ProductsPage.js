@@ -1,6 +1,6 @@
 import 'react-native-gesture-handler';
 import * as React from 'react';
-import { StyleSheet, View, Dimensions, Text, Button, FlatList } from 'react-native';
+import { StyleSheet, View, Text, FlatList } from 'react-native';
 import ProductCard from "../components/ProductCard.js"
 
 const DATA = [

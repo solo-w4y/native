@@ -1,6 +1,6 @@
 import 'react-native-gesture-handler';
 import * as React from 'react';
-import { StyleSheet, View, Dimensions, Text, Button } from 'react-native';
+import { StyleSheet, View, Text} from 'react-native';
 
 export default function ProductPage({ route, navigation }) {
   const { id, name, type } = route.params;
