@@ -86,7 +86,7 @@ export default function ProductPage({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <Text>Choose to your liking</Text>
+      <Text style={styles.title}>Choose to your liking</Text>
       <FlatList data={DATA} renderItem={renderItem} keyExtractor={item => item.id} />
     </View>
   );
@@ -95,7 +95,12 @@ export default function ProductPage({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    padding: 10,
+    backgroundColor: '#fff'
+  },
+  title: {
+    fontSize: 24,
+    padding: 25,
+    paddingBottom: 30,
+    color: "rgb(50,50,60)"
   }
 })

@@ -5,7 +5,7 @@ import { StyleSheet, View, Text, Button } from 'react-native';
 export default function WelcomePage({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text>Hello</Text>
+      <Text style={styles.title}>Hi, there!</Text>
       <Button
         title="Go to Products"
         onPress={() => navigation.replace('Products')}
@@ -19,6 +19,10 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-evenly',
+  },
+  title: {
+    fontSize: 36,
+    color: "rgb(50,50,60)"
   }
 })
